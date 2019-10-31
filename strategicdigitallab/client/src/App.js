@@ -22,18 +22,19 @@ class App extends React.Component {
 
 
                 <div>
+                   
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
 
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <Link to="/" className="nav-link font-weight-bold ">About Us</Link>
+                                <li className="nav-item">
+                                    <Link to="/home" className="nav-link font-weight-bold ">About Us</Link>
                                 </li>
                                 <li className="nav-item ">
-                                    <Link to="/" className="nav-link font-weight-bold ">Case Studies</Link>
+                                    <Link to="/home" className="nav-link font-weight-bold ">Case Studies</Link>
                                 </li>
                                 <li className="nav-item ">
-                                    <Link to="/contactus" className="nav-link font-weight-bold">Contact us</Link>
+                                    <Link to="/" className="nav-link font-weight-bold">Contact us</Link>
                                 </li>
                             </ul>
                         </div>
@@ -42,8 +43,8 @@ class App extends React.Component {
 
               
                 <div >
-                    <Route exact path="/" component={Home} />
-                    <Route path="/contactus" component={ContactUsComponent} />
+                    <Route exact path="/" component={ContactUsComponent} />
+                    <Route path="/home" component={Home} />
                 </div>
             </Router>
 
